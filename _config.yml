@@ -1,0 +1,7 @@
+title: "CHIPS Lab"
+description: "Circuit & Hardware Intelligence for Performance and Security"
+
+remote_theme: "mmistakes/minimal-mistakes"
+
+plugins:
+  - jekyll-include-cache
