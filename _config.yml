@@ -1,7 +1,37 @@
 title: "CHIPS Lab"
 description: "Circuit & Hardware Intelligence for Performance and Security"
+url: "https://YOUR_GITHUB_USERNAME.github.io"
+baseurl: "/chipslab"   # 레포 이름이 chipslab이면 이렇게. username.github.io 레포면 "" 로 비워.
 
 remote_theme: "mmistakes/minimal-mistakes"
 
 plugins:
   - jekyll-include-cache
+  - jekyll-sitemap
+
+markdown: kramdown
+
+# 상단 메뉴
+navigation:
+  - title: "Home"
+    url: /
+  - title: "Research"
+    url: /research/
+  - title: "Publications"
+    url: /publications/
+  - title: "People"
+    url: /people/
+  - title: "Join Us"
+    url: /join/
+
+# 컬렉션(리서치/논문/사람) - 필요하면 확장 가능
+collections:
+  research:
+    output: true
+    permalink: /research/:name/
+  publications:
+    output: true
+    permalink: /publications/:name/
+  people:
+    output: true
+    permalink: /people/:name/
